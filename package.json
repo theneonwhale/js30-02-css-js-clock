@@ -1,0 +1,33 @@
+{
+  "name": "js30-02-css-js-clock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html",
+    "predeploy": "npm run build -- --public-url=/js30-02-css-js-clock/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theneonwhale/js30-02-css-js-clock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theneonwhale/js30-02-css-js-clock/issues"
+  },
+  "homepage": "https://github.com/theneonwhale/js30-02-css-js-clock#readme",
+  "devDependencies": {
+    "json-server": "^0.16.2",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "dependencies": {
+    "css": "^3.0.0",
+    "gh-pages": "^3.1.0"
+  }
+}
