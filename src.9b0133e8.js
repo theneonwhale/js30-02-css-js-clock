@@ -5,4 +5,4 @@ var e=document.querySelector(".second-hand"),t=document.querySelector(".minute-h
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./styles.css"),require("./js/clock");
 },{"./styles.css":"Tnu0","./js/clock":"tZqg"}]},{},["Focm"], null)
-//# sourceMappingURL=/js30-02-css-js-clock/src.d171c883.js.map
+//# sourceMappingURL=/js30-02-css-js-clock/src.9b0133e8.js.map
