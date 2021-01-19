@@ -11,7 +11,6 @@ body {
   justify-content: center;
   background: #018ded url(./images/background.jpg) center;
   margin: 0;
-  font-size: 2rem;
   display: flex;
   flex: 1;
   min-height: 100vh;
@@ -88,6 +87,8 @@ body {
   border-radius: 10px;
   cursor: pointer;
   text-align: center;
+  position: relative;
+  font-size: 15px;
 }
 
 .button:hover,
@@ -105,4 +106,29 @@ body {
 .button.on:focus {
   background-color: #ffffff;
   color: #000000;
+}
+
+.button::after {
+  display: block;
+  width: 300px;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  content: 'This sound can be very annoying!';
+  transform: translate(-50%, 100%);
+  opacity: 0;
+  visibility: hidden;
+  font-size: 13px;
+  color: rgb(218, 0, 0);
+}
+
+.button:hover::after {
+  transform: translate(-43%, -65%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.button.on::after {
+  opacity: 0;
+  visibility: hidden;
 }
